@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+}
+body{
+  background: black;
+}
+header{
+  background: #5b7989;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+  margin-top:30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+h1{
+  text-shadow: 0 0 2px #02010a;
+  text-align: left;
+  font-size: 40px;
+  color: #ffff
+}
+.navegador{
+  text-align: right;
+}
+a{
+  color: white;
+  font-size: 20px;
+}
+li{
+  display: inline-block;
+}
+.active{
+  text-decoration: none;
+}
+@media screen and (min-width: 900px) {
+/*Sections*/
+  section{
+    background:  #82c3a6;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .primero,.segundo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+section img{
+  width: 30%;
+  padding: 20px;
+  height: 30%
+}
+.blur{
+  filter: blur(10px);
+}
+.pair{
+  filter: grayscale(100%);
+}
+.sepia{
+  filter: sepia(90%);
+}
+/*Footer*/
+Footer{
+  background: #C6d5c5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: 20px;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  column-count: 4;
+}
+a img{
+  width:5%;
+}
+}
+@media screen and (max-width: 899px) {
+ section{
+   background:  #82c3a6;
+   margin-left: 20px;
+   margin-right: 20px;
+   padding: 20px;
+   text-align: center;
+ }
+ .primero,.segundo{
+    flex-direction: column;
+ }
+ .primero img{
+   width: 80%;
+   padding: 50px 0 0 0;
+ }
+ .segundo img{
+    width: 80%;
+   padding: 0 0 50px 0;
+ }
+ .blur{
+   filter: blur(10px);
+ }
+ .pair{
+   filter: grayscale(100%);
+ }
+ .sepia{
+   filter: sepia(90%);
+ }
+ /*Footer*/
+ Footer{
+   background: #C6d5c5;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   margin-left: 20px;
+   padding: 20px;
+   margin-right: 20px;
+   margin-bottom: 30px;
+   column-count: 1;
+ }
+ a img{
+   width:5%;
+ }
+  }
